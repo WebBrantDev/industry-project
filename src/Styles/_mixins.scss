@@ -1,0 +1,47 @@
+//SCREEN BREAKPOINTS
+@mixin mq-tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mq-desktop {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+//flex-box
+@mixin display-flex($direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+//margin for wrappers
+@mixin margin {
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  @include mq-tablet {
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+  }
+  @include mq-desktop {
+    margin: auto;
+    max-width: 1020px;
+  }
+}
+//margin for component gutters
+@mixin component-gutter {
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  @include mq-tablet {
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+  }
+  @include mq-desktop {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
