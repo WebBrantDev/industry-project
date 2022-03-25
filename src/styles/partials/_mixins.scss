@@ -1,4 +1,5 @@
 @use "./fonts" as *;
+@use "./variables" as *;
 
 //SCREEN BREAKPOINTS
 @mixin mq-tablet {
@@ -97,4 +98,17 @@
   @include mq-tablet {
     @include font-tablet-desktop-p3-body-small;
   }
+}
+
+//buttons
+@mixin button-search-sizing {
+  width: 100%;
+  border-radius: 0.5rem;
+  // box-sizing: border-box;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  height: 4.5rem;
+  padding: 1rem 1rem;
+  outline: 0;
+  border: 1px solid $secondary-color-grey;
 }
