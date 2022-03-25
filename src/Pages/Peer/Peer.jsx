@@ -36,8 +36,8 @@ const Peer = () => {
       id: 3,
       name: "Paola Diaz",
       pronouns: "She / Her",
-      location: "Montevideo, Uruguay",
-      demo: "Demographic: 39-51",
+      location: "Lima, Peru",
+      demo: "Demographic: 45-54",
       img: Paola,
     },
   ];
@@ -45,7 +45,6 @@ const Peer = () => {
   return (
     <div className="peer">
       <section className="peer__header">
-        <h1 className="peer__heading">Emotional Support</h1>
         <div className="peer__subheading-container">
           <h3 className="peer__subheading">Peers</h3>
           <img className="peer__icon" src={filter} alt="Filter icon" />

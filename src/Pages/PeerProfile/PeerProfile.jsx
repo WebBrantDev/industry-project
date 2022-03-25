@@ -1,5 +1,5 @@
 import "./PeerProfile.scss";
-import Jamie from "../../assets/images/1.png";
+import Jamie from "../../assets/images/big1.png";
 import Adrienne from "../../assets/images/2.png";
 import Cyrus from "../../assets/images/3.png";
 import Paola from "../../assets/images/4.png";
@@ -8,9 +8,11 @@ import chat from "../../assets/icons/ChatMajor.svg";
 import store from "../../assets/icons/StoreMajor.svg";
 import { Component } from "react";
 import SuccessModal from "../../Components/SuccessModal/SuccessModal";
+import VideoModal from "../../Components/VideoModal/VideoModal";
 
 class PeerProfile extends Component {
   state = {
+    videoCall: false,
     showModal: false,
     isLoaded: false,
     id: 0,
@@ -66,8 +68,15 @@ class PeerProfile extends Component {
     });
   }
 
-  showModal = () => {
+  showVideo = () => {
     this.setState({
+      showVideo: true,
+    });
+  };
+
+  hideVideo = () => {
+    this.setState({
+      showVideo: false,
       showModal: true,
     });
   };
@@ -103,7 +112,7 @@ class PeerProfile extends Component {
                   alt="chat icon"
                 />
               </div>
-              <div className="peer-profile__icon-bg">
+              <div onClick={this.showVideo} className="peer-profile__icon-bg">
                 <img
                   className="peer-profile__icon"
                   src={videocam}
@@ -130,7 +139,7 @@ class PeerProfile extends Component {
               />
               <p className="peer-profile__info">
                 Shopify Store:{" "}
-                <span className="peer-profile__highlight ">
+                <span className="peer-profile__highlight">
                   {this.state.peers[this.state.id].store}
                 </span>
               </p>
@@ -142,6 +151,7 @@ class PeerProfile extends Component {
           {!this.state.showModal || (
             <SuccessModal handleClose={this.hideModal} />
           )}
+          {!this.state.showVideo || <VideoModal hideVideo={this.hideVideo} />}
         </section>
       );
     }

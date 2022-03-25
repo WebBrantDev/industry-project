@@ -25,9 +25,9 @@
 
   &__card-heading {
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: toRem(24);
     color: #000;
-    line-height: toRem(32);
+    line-height: toRem(28);
   }
 
   &__card-text {

@@ -4,6 +4,7 @@ import home from "../../assets/icons/HomeMajor.svg";
 import orders from "../../assets/icons/OrdersMajor.svg";
 import products from "../../assets/icons/ProductsMajor.svg";
 import store from "../../assets/icons/StoreMajor.svg";
+import community from "../../assets/icons/community.svg";
 
 const PageFooter = () => {
   return (
@@ -31,6 +32,12 @@ const PageFooter = () => {
           <div className="footer__icon-container">
             <img className="footer__icon" src={store} alt="Store icon" />
             <p>Store</p>
+          </div>
+        </Link>
+        <Link className="footer__link" to="/">
+          <div className="footer__icon-container">
+            <img className="footer__icon" src={community} alt="Store icon" />
+            <p className="footer__highlight">Community</p>
           </div>
         </Link>
       </nav>

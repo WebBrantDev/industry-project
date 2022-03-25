@@ -2,7 +2,6 @@ import "./Home.scss";
 import { MdSearch } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa";
 import discussion from "../../assets/icons/discussion.svg";
-import groups from "../../assets/icons/Frame44.svg";
 import events from "../../assets/icons/calendar.svg";
 import blogs from "../../assets/icons/text-block.svg";
 import peer from "../../assets/icons/customer-plus.svg";
@@ -57,7 +56,7 @@ function Home() {
             <div className="community__card--left">
               <img
                 className="community__card--icon"
-                src={groups}
+                src={"#"}
                 alt="groups icon"
               ></img>
               <p className="community__card--text">Groups</p>
