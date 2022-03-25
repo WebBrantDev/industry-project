@@ -38,7 +38,12 @@ class SuccessModal extends Component {
             </div>
           </div>
           <div className="success-modal__button-container">
-            <button className="success-modal__button">Submit</button>
+            <button
+              className="success-modal__button"
+              onClick={this.props.handleClose}
+            >
+              Submit
+            </button>
           </div>
           <p className="success-modal__text">Did you need more help?</p>
         </div>
