@@ -1,0 +1,26 @@
+@use "../../styles/partials/global" as *;
+
+.peer {
+  padding-top: toRem(30);
+  background-color: #F6F6F6;
+  &__icon {
+    height: toRem(20);
+    width: toRem(20);
+  }
+
+  &__subheading-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 toRem(20) toRem(5) toRem(20);
+  }
+
+  &__subheading {
+    font-size: toRem(18);
+    line-height: toRem(24);
+    font-weight: 700;
+  }
+
+  &__card-container {
+    margin-bottom: toRem(100);
+  }
+}

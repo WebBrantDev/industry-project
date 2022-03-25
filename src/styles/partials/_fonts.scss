@@ -1,0 +1,175 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;1,100;1,200&family=Titillium+Web:wght@400;600&display=swap");
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"),
+    url("../../assets/webfonts/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed"),
+    url("../../assets/webfonts/MYRIADPRO-COND.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed Italic"),
+    url("../../assets/webfonts/MYRIADPRO-CONDIT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Light"),
+    url("../../assets/webfonts/MyriadPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Semibold"),
+    url("../../assets/webfonts/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Semibold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Semibold Italic"),
+    url("../../assets/webfonts/MYRIADPRO-SEMIBOLDIT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed"),
+    url("../../assets/webfonts/MYRIADPRO-BOLDCOND.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold"),
+    url("../../assets/webfonts/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Italic"),
+    url("../../assets/webfonts/MYRIADPRO-BOLDIT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Condensed Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed Italic"),
+    url("../../assets/webfonts/MYRIADPRO-BOLDCONDIT.woff") format("woff");
+}
+
+html {
+  font-family: "Myriad Pro", sans-serif;
+  // font-family: "Titillium Web", sans-serif;
+}
+
+//===============================//
+//          FONT MIXINS
+//===============================//
+// * Desktop & Tablet
+@mixin font-tablet-desktop-h1-page-header {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+@mixin font-tablet-desktop-h2-subheader {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@mixin font-tablet-desktop-body-h3-labels-link-buttons {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+@mixin font-tablet-desktop-labels-h4-table-header {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+@mixin font-tablet-desktop-p1-body-large {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@mixin font-tablet-desktop-p2-body-medium {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+
+@mixin font-tablet-desktop-p3-body-small {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+// * Mobile
+@mixin font-mobile-h1-page-header {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+@mixin font-mobile-h2-subheader {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+@mixin font-mobile-body-h3-labels-link-buttons {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+@mixin font-mobile-labels-h4-table-header {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+@mixin font-mobile-p1-body-large {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+@mixin font-mobile-p2-body-medium {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@mixin font-mobile-p3-body-small {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+}
