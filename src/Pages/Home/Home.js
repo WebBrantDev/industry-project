@@ -5,6 +5,7 @@ import discussion from "../../assets/icons/discussion.svg";
 import events from "../../assets/icons/calendar.svg";
 import blogs from "../../assets/icons/text-block.svg";
 import peer from "../../assets/icons/customer-plus.svg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -94,7 +95,7 @@ function Home() {
               <FaChevronRight className="community__card--arrow" />
             </div>
           </div>
-          <div className="community__card">
+          <Link to="/support" className="community__card">
             <div className="community__card--left">
               <img
                 className="community__card--icon"
@@ -107,7 +108,7 @@ function Home() {
               <p className="community__card--learn">Learn More</p>
               <FaChevronRight className="community__card--arrow" />
             </div>
-          </div>
+          </Link>
         </div>
       </section>
     </>

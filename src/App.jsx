@@ -16,9 +16,9 @@ function App() {
     <BrowserRouter>
       <PageHeader />
       <Switch>
-        {/* <Route path="/" exact component={Home} /> */}
-        <Route path="/" exact component={Peer} />
-        {/* <Route path="/support" component={Support} /> */}
+        <Route path="/" exact component={Home} />
+        <Route path="/support" component={Support} />
+        <Route path="/peer" component={Peer} />
         <Route path={"/peer/:id"} component={PeerProfile} />
       </Switch>
       <PageFooter />
