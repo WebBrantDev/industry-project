@@ -19,7 +19,7 @@ class PageHeader extends Component {
 
   render() {
     if (this.state.goBack) {
-      return <Redirect to="/"></Redirect>;
+      return <Redirect to="/" />;
     } else {
       return (
         <>

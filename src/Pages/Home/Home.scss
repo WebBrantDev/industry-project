@@ -7,6 +7,7 @@
 .community {
   background-color: $background-color-light-grey;
   height: 100vh;
+  margin-bottom: toRem(80);
   &__heading {
     @include page-header;
     padding-top: 20px;

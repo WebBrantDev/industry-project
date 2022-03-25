@@ -12,18 +12,18 @@ import Peer from "./Pages/Peer/Peer";
 
 function App() {
   return (
-    // <div className="App">
-    <BrowserRouter>
-      <PageHeader />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/support" component={Support} />
-        <Route path="/peer" component={Peer} />
-        <Route path={"/peer/:id"} component={PeerProfile} />
-      </Switch>
-      <PageFooter />
-    </BrowserRouter>
-    // </div>
+    <div className="App">
+      <BrowserRouter>
+        <PageHeader />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/support" component={Support} />
+          <Route path="/peer" exact component={Peer} />
+          <Route path="/peer/:id" component={PeerProfile} />
+        </Switch>
+        <PageFooter />
+      </BrowserRouter>
+    </div>
   );
 }
 
