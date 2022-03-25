@@ -1,3 +1,5 @@
+@use "./fonts" as *;
+
 //SCREEN BREAKPOINTS
 @mixin mq-tablet {
   @media only screen and (min-width: 768px) {
@@ -43,5 +45,56 @@
   @include mq-desktop {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+}
+
+//RESPONSIVE FONTS MIXINS
+//mobile and tablet/desktop font styles combined for respective type
+@mixin page-header {
+  @include font-mobile-h1-page-header;
+  @include mq-tablet {
+    @include font-tablet-desktop-h1-page-header;
+  }
+}
+
+@mixin subheader {
+  @include font-mobile-h2-subheader;
+  @include mq-tablet {
+    @include font-tablet-desktop-h2-subheader;
+  }
+}
+
+@mixin labels-links-buttons {
+  @include font-mobile-body-h3-labels-link-buttons;
+  @include mq-tablet {
+    @include font-tablet-desktop-body-h3-labels-link-buttons;
+  }
+}
+
+@mixin table-header {
+  @include font-mobile-labels-h4-table-header;
+  @include mq-tablet {
+    @include font-tablet-desktop-labels-h4-table-header;
+  }
+}
+
+@mixin p1 {
+  @include font-mobile-p1-body-large;
+  @include mq-tablet {
+    @include font-tablet-desktop-p1-body-large;
+  }
+}
+
+@mixin p2 {
+  @include font-mobile-p2-body-medium;
+  @include mq-tablet {
+    @include font-tablet-desktop-p2-body-medium;
+  }
+}
+
+@mixin p3 {
+  @include font-mobile-p3-body-small;
+  @include mq-tablet {
+    @include font-tablet-desktop-p3-body-small;
   }
 }
