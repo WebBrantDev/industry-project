@@ -1,6 +1,11 @@
 import "./Community.scss";
 import { MdSearch } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa";
+import discussion from "../../assets/icons/discussion.svg";
+import groups from "../../assets/icons/Frame44.svg";
+import events from "../../assets/icons/calendar.svg";
+import blogs from "../../assets/icons/text-block.svg";
+import peer from "../../assets/icons/customer-plus.svg";
 
 function Community() {
   return (
@@ -18,8 +23,10 @@ function Community() {
             placeholder="Search the Community..."
           ></input>
         </div>
-        <h2>OR</h2>
-        <button className="community__button">Ask a Question</button>
+        <h2 className="community__sub-heading">OR</h2>
+        <div className="community__button--container">
+          <button className="community__button">Ask a Question</button>
+        </div>
         <div className="community__stats-container">
           <div className="community__stats-container--left">
             <p className="community__stat">959312</p>
@@ -30,14 +37,56 @@ function Community() {
             <p className="community__text">Users Online</p>
           </div>
         </div>
-        <div className="community__card">
-          <div className="community__card--left">
-            <div className="community__card--icon"></div>
-            <p className="community__card--text">Discussion</p>
+        <div className="community__card-container">
+          <div className="community__card">
+            <div className="community__card--left">
+              <img className="community__card--icon" src={discussion}></img>
+              <p className="community__card--text">Discussion</p>
+            </div>
+            <div className="community__card--right">
+              <p className="community__card--learn">Learn More</p>
+              <FaChevronRight className="community__card--arrow" />
+            </div>
           </div>
-          <div className="community__card--right">
-            <FaChevronRight className="community__card--arrow" />
-            <p className="community__card--learn">Learn More</p>
+          <div className="community__card">
+            <div className="community__card--left">
+              <img className="community__card--icon" src={groups}></img>
+              <p className="community__card--text">Groups</p>
+            </div>
+            <div className="community__card--right">
+              <p className="community__card--learn">Learn More</p>
+              <FaChevronRight className="community__card--arrow" />
+            </div>
+          </div>
+          <div className="community__card">
+            <div className="community__card--left">
+              <img className="community__card--icon" src={events}></img>
+              <p className="community__card--text">Events</p>
+            </div>
+            <div className="community__card--right">
+              <p className="community__card--learn">Learn More</p>
+              <FaChevronRight className="community__card--arrow" />
+            </div>
+          </div>
+          <div className="community__card">
+            <div className="community__card--left">
+              <img className="community__card--icon" src={blogs}></img>
+              <p className="community__card--text">Blogs</p>
+            </div>
+            <div className="community__card--right">
+              <p className="community__card--learn">Learn More</p>
+              <FaChevronRight className="community__card--arrow" />
+            </div>
+          </div>
+          <div className="community__card">
+            <div className="community__card--left">
+              <img className="community__card--icon" src={peer}></img>
+              <p className="community__card--text">Peer Support</p>
+            </div>
+            <div className="community__card--right">
+              <p className="community__card--learn">Learn More</p>
+              <FaChevronRight className="community__card--arrow" />
+            </div>
           </div>
         </div>
       </section>
