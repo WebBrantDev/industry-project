@@ -1,0 +1,76 @@
+@use "../../styles/partials/global" as *;
+
+.peer-profile {
+  &__heading-container, &__info-container {
+    margin: 0 toRem(20);
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: toRem(23);
+  }
+
+  &__heading-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: toRem(8);
+  }
+
+  &__heading {
+    font-size: toRem(28);
+    line-height: toRem(32);
+    color: #000;
+    font-weight: 600;
+  }
+
+  &__info {
+    font-size: toRem(16);
+    line-height: toRem(24);
+
+  }
+
+  &__icon-container {
+    display: flex;
+  }
+
+  &__icon-bg {
+    height: toRem(40);
+    width: toRem(40);
+    background-color: #c4c4c4;
+    margin-left: toRem(10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.05));
+  }
+
+  &__icon, &__store-icon {
+    height: toRem(20);
+    width: toRem(20);
+  }
+
+  &__store-container {
+    display: flex;
+    align-items: center;
+    margin-top: toRem(8);
+  }
+
+  &__store-icon {
+    display: inline;
+    margin-right: toRem(6);
+  }
+
+  &__highlight {
+    color: #008060;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: toRem(16);
+    line-height: toRem(24);
+  }
+
+  &__story {
+    margin-top: toRem(37);
+    font-size: toRem(15);
+    line-height: toRem(22);
+  }
+}
