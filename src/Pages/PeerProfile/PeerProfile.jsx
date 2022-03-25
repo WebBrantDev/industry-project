@@ -7,9 +7,11 @@ import videocam from "../../assets/icons/Videocam.svg";
 import chat from "../../assets/icons/ChatMajor.svg";
 import store from "../../assets/icons/StoreMajor.svg";
 import { Component } from "react";
+import SuccessModal from "../../Components/SuccessModal/SuccessModal";
 
 class PeerProfile extends Component {
   state = {
+    showModal: false,
     isLoaded: false,
     id: 0,
     peers: [
@@ -63,6 +65,18 @@ class PeerProfile extends Component {
       isLoaded: true,
     });
   }
+
+  showModal = () => {
+    this.setState({
+      showModal: true,
+    });
+  };
+
+  hideModal = () => {
+    this.setState({
+      showModal: false,
+    });
+  };
 
   render() {
     if (!this.state.isLoaded) {
@@ -125,6 +139,9 @@ class PeerProfile extends Component {
               {this.state.peers[this.state.id].story}
             </p>
           </div>
+          {!this.state.showModal || (
+            <SuccessModal handleClose={this.hideModal} />
+          )}
         </section>
       );
     }
