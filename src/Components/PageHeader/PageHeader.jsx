@@ -20,7 +20,7 @@ function PageHeader() {
           amycarringtion
           <VscTriangleDown className=" header__user-bold--arrow" />
         </h2>
-        <p className="header__user">Amy Carrtingon</p>
+        <p className="header__user">Amy Carrington</p>
       </section>
     </>
   );

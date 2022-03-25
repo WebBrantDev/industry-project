@@ -7,16 +7,17 @@ import Home from "./Pages/Home/Home";
 import Support from "./Pages/Support/Support";
 
 import PageFooter from "./Components/PageFooter/PageFooter";
+import Peer from "./Pages/Peer/Peer";
 
 function App() {
   return (
     // <div className="App">
     <BrowserRouter>
       <PageHeader />
-
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/support" component={Support} />
+        {/* <Route path="/" exact component={Home} /> */}
+        <Route path="/" exact component={Peer} />
+        {/* <Route path="/support" component={Support} /> */}
       </Switch>
       <PageFooter />
     </BrowserRouter>
