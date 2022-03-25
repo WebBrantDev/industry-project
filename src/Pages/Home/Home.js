@@ -5,6 +5,7 @@ import discussion from "../../assets/icons/discussion.svg";
 import events from "../../assets/icons/calendar.svg";
 import blogs from "../../assets/icons/text-block.svg";
 import peer from "../../assets/icons/customer-plus.svg";
+import groups from "../../assets/icons/community.svg";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -57,7 +58,7 @@ function Home() {
             <div className="community__card--left">
               <img
                 className="community__card--icon"
-                src={"#"}
+                src={groups}
                 alt="groups icon"
               ></img>
               <p className="community__card--text">Groups</p>
