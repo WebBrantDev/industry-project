@@ -8,6 +8,7 @@
     @include component-gutter;
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
   &__time {
     @include p2;
@@ -19,6 +20,7 @@
     @include p1;
     font-weight: 600;
     color: $primary-color-green;
+    margin-bottom: 8px;
 
     &--arrow {
       position: absolute;
@@ -29,6 +31,15 @@
     text-align: center;
     @include p2;
     margin-bottom: 4px;
+  }
+  &__back {
+    color: $secondary-color-dark-grey;
+    font-size: 14px;
+  }
+  &__link {
+    position: absolute;
+    left: -1rem;
+    top: 27px;
   }
 }
 .phone-icon {

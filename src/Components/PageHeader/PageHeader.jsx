@@ -2,28 +2,48 @@ import "./PageHeader.scss";
 import { MdOutlineSignalCellularAlt } from "react-icons/md";
 import { FaWifi } from "react-icons/fa";
 import { FaBatteryHalf } from "react-icons/fa";
-import { VscTriangleDown } from "react-icons/vsc";
+import { FaChevronLeft } from "react-icons/fa";
+import React, { Component } from "react";
+import { Link, Redirect } from "react-router-dom";
 
-function PageHeader() {
-  return (
-    <>
-      <section className="header">
-        <div className="header__container">
-          <p className="header__time">5:42</p>
-          <div className="header__container--right">
-            <MdOutlineSignalCellularAlt className="phone-icon" />
-            <FaWifi className="phone-icon" />
-            <FaBatteryHalf className="phone-icon" />
-          </div>
-        </div>
-        <h2 className="header__user-bold">
-          amycarringtion
-          <VscTriangleDown className=" header__user-bold--arrow" />
-        </h2>
-        <p className="header__user">Amy Carrington</p>
-      </section>
-    </>
-  );
+class PageHeader extends Component {
+  state = {
+    goBack: false,
+  };
+
+  handleBack = (e) => {
+    this.setState = {
+      goBack: true,
+    };
+  };
+
+  render() {
+    if (this.state.goBack) {
+      return <Redirect to="/"></Redirect>;
+    } else {
+      return (
+        <>
+          <section className="header">
+            <div className="header__container">
+              <p className="header__time">5:42</p>
+              <div className="header__container--right">
+                <MdOutlineSignalCellularAlt className="phone-icon" />
+                <FaWifi className="phone-icon" />
+                <FaBatteryHalf className="phone-icon" />
+              </div>
+              <Link className="header__link">
+                <FaChevronLeft
+                  className="header__back"
+                  onClick={this.handleBack}
+                />
+              </Link>
+            </div>
+            <h2 className="header__user-bold">Peer Support</h2>
+          </section>
+        </>
+      );
+    }
+  }
 }
 
 export default PageHeader;

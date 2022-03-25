@@ -1,10 +1,11 @@
 import "./Support.scss";
-import convo from "../../assets/images/PEER.png";
+import convo from "../../assets/images/PEER2.png";
 import { FaChevronRight } from "react-icons/fa";
 import business from "../../assets/icons/capital.svg";
 import channels from "../../assets/icons/channels.svg";
 import marketing from "../../assets/icons/managed-store.svg";
 import support from "../../assets/icons/smiley-happy.svg";
+import { Link } from "react-router-dom";
 
 function Support() {
   return (
@@ -65,7 +66,7 @@ function Support() {
             </div>
           </div>
           {/* next card */}
-          <div className="community__card">
+          <Link to="/peer" className="community__card">
             <div className="community__card--left">
               <img
                 className="community__card--icon"
@@ -77,7 +78,7 @@ function Support() {
             <div className="community__card--right">
               <FaChevronRight className="support__card--arrow" />
             </div>
-          </div>
+          </Link>
           {/* next card */}
         </div>
       </section>
