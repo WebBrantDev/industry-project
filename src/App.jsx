@@ -3,20 +3,21 @@ import "./App.scss";
 
 import PageHeader from "./Components/PageHeader/PageHeader";
 import Community from "./Pages/Community/Community";
+import Home from "./Pages/Home/Home";
 import PageFooter from "./Components/PageFooter/PageFooter";
 
 function App() {
   return (
-    <div className="App">
+    // <div className="App">
+    <BrowserRouter>
       <PageHeader />
 
-      <BrowserRouter>
-        <Switch>
-          <Route path={"/"} exact component={Community} />
-        </Switch>
-        <PageFooter />
-      </BrowserRouter>
-    </div>
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+      <PageFooter />
+    </BrowserRouter>
+    // </div>
   );
 }
 
