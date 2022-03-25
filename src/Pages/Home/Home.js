@@ -37,6 +37,7 @@ function Home() {
             <p className="community__text">Users Online</p>
           </div>
         </div>
+        {/* individual cards */}
         <div className="community__card-container">
           <div className="community__card">
             <div className="community__card--left">
