@@ -1,11 +1,16 @@
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.scss";
+import PageFooter from "./Components/PageFooter/PageFooter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Industry Project</p>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route path={"/"} exact />
+        </Switch>
+        <PageFooter />
+      </BrowserRouter>
     </div>
   );
 }
