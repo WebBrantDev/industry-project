@@ -40,7 +40,11 @@ function Community() {
         <div className="community__card-container">
           <div className="community__card">
             <div className="community__card--left">
-              <img className="community__card--icon" src={discussion}></img>
+              <img
+                className="community__card--icon"
+                src={discussion}
+                alt="discussion icon"
+              ></img>
               <p className="community__card--text">Discussion</p>
             </div>
             <div className="community__card--right">
@@ -50,7 +54,11 @@ function Community() {
           </div>
           <div className="community__card">
             <div className="community__card--left">
-              <img className="community__card--icon" src={groups}></img>
+              <img
+                className="community__card--icon"
+                src={groups}
+                alt="groups icon"
+              ></img>
               <p className="community__card--text">Groups</p>
             </div>
             <div className="community__card--right">
@@ -60,7 +68,11 @@ function Community() {
           </div>
           <div className="community__card">
             <div className="community__card--left">
-              <img className="community__card--icon" src={events}></img>
+              <img
+                className="community__card--icon"
+                src={events}
+                alt="event icon"
+              ></img>
               <p className="community__card--text">Events</p>
             </div>
             <div className="community__card--right">
@@ -70,7 +82,11 @@ function Community() {
           </div>
           <div className="community__card">
             <div className="community__card--left">
-              <img className="community__card--icon" src={blogs}></img>
+              <img
+                className="community__card--icon"
+                src={blogs}
+                alt="blog icon"
+              ></img>
               <p className="community__card--text">Blogs</p>
             </div>
             <div className="community__card--right">
@@ -80,7 +96,11 @@ function Community() {
           </div>
           <div className="community__card">
             <div className="community__card--left">
-              <img className="community__card--icon" src={peer}></img>
+              <img
+                className="community__card--icon"
+                src={peer}
+                alt="peers icon"
+              ></img>
               <p className="community__card--text">Peer Support</p>
             </div>
             <div className="community__card--right">
