@@ -86,7 +86,7 @@
     @include button-search-sizing;
     @include display-flex(row, center, space-between);
     box-shadow: 0 1px 10px rgb(0 0 0 / 0.15);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     &--left {
       position: relative;
     }
