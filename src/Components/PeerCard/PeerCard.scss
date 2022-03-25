@@ -1,0 +1,11 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/functions" as *;
+@use "../../styles/partials/variables" as *;
+
+.peer {
+  &__card {
+    display: flex;
+  }
+}
