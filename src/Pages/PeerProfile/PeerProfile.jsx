@@ -11,7 +11,7 @@ import { Component } from "react";
 class PeerProfile extends Component {
   state = {
     isLoaded: false,
-    id: this.props.match.params.id || 1,
+    id: 0,
     peers: [
       {
         id: 0,
@@ -57,8 +57,15 @@ class PeerProfile extends Component {
     ],
   };
 
+  componentDidMount() {
+    this.setState({
+      id: this.props.match.params.id,
+      isLoaded: true,
+    });
+  }
+
   render() {
-    if (!isLoaded) {
+    if (!this.state.isLoaded) {
       return <div>Loading...</div>;
     } else {
       return (
@@ -71,16 +78,24 @@ class PeerProfile extends Component {
             />
           </div>
           <div className="peer-profile__heading-container">
-            <h1>{this.state.peers[this.state.id].name}</h1>
+            <h1 className="peer-profile__heading">
+              {this.state.peers[this.state.id].name}
+            </h1>
             <div className="peer-profile__icon-container">
-              <img className="peer-profile__icon" src={chat} alt="chat icon" />
-            </div>
-            <div className="peer-profile__icon-container">
-              <img
-                className="peer-profile__icon"
-                src={videocam}
-                alt="video camera icon"
-              />
+              <div className="peer-profile__icon-bg">
+                <img
+                  className="peer-profile__icon"
+                  src={chat}
+                  alt="chat icon"
+                />
+              </div>
+              <div className="peer-profile__icon-bg">
+                <img
+                  className="peer-profile__icon"
+                  src={videocam}
+                  alt="video camera icon"
+                />
+              </div>
             </div>
           </div>
           <div className="peer-profile__info-container">
@@ -95,13 +110,15 @@ class PeerProfile extends Component {
             </p>
             <div className="peer-profile__store-container">
               <img
-                className="peer-profile__icon"
+                className="peer-profile__store-icon"
                 src={store}
                 alt="store icon"
               />
               <p className="peer-profile__info">
                 Shopify Store:{" "}
-                <span>{this.state.peers[this.state.id].store}</span>
+                <span className="peer-profile__highlight ">
+                  {this.state.peers[this.state.id].store}
+                </span>
               </p>
             </div>
             <p className="peer-profile__story">
