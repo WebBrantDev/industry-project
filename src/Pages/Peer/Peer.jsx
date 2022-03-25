@@ -9,7 +9,7 @@ import PeerCard from "../../Components/PeerCard/PeerCard";
 const Peer = () => {
   const peers = [
     {
-      id: 1,
+      id: 0,
       name: "Jamie Kawata",
       pronouns: "They / Them",
       location: "Osaka, Japan",
@@ -17,7 +17,7 @@ const Peer = () => {
       img: Jamie,
     },
     {
-      id: 2,
+      id: 1,
       name: "Adrienne Wan",
       pronouns: "She / Her",
       location: "Toronto, Canada",
@@ -25,7 +25,7 @@ const Peer = () => {
       img: Adrienne,
     },
     {
-      id: 3,
+      id: 2,
       name: "Cyrus Price",
       pronouns: "He / Him",
       location: "San Francisco, USA",
@@ -33,7 +33,7 @@ const Peer = () => {
       img: Cyrus,
     },
     {
-      id: 4,
+      id: 3,
       name: "Paola Diaz",
       pronouns: "She / Her",
       location: "Montevideo, Uruguay",
