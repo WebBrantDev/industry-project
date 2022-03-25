@@ -1,11 +1,10 @@
 import "./App.scss";
+import PageHeader from "./Components/PageHeader/PageHeader";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Industry Project</p>
-      </header>
+      <PageHeader />
     </div>
   );
 }
